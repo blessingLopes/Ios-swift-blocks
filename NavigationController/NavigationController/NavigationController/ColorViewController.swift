@@ -22,7 +22,5 @@ class ColorViewController: UIViewController {
     }
     
     
-    
 
-    
 }

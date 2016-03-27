@@ -10,7 +10,9 @@ import UIKit
 class MainViewController: UIViewController {
     
     // MARK: Stored Properties
-    lazy var  textLabel: UILabel = UILabel()
+    
+    // lazy UILabel
+    lazy var  textLabel = UILabel()
     
     
     
