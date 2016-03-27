@@ -31,7 +31,7 @@ class MainViewController: UIViewController {
    
         
 
-        view.backgroundColor = .whiteColor()
+        view.backgroundColor = .greenColor()
         view.addSubview(textLabel)
         
         // Center label horizontally
@@ -56,10 +56,6 @@ class MainViewController: UIViewController {
         // Activate constraints ( label.translatesAutoresizingMaskIntoConstraints = false , PLEASE!)
         NSLayoutConstraint.activateConstraints(constraintsLabel_H)
         NSLayoutConstraint.activateConstraints(constraintsLabel_V)
-        
-        
-        
-        
         
         
         
