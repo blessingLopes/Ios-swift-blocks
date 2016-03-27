@@ -17,6 +17,14 @@ class MainViewController: UIViewController {
     
     
     
+    //MARK:- De-init
+    deinit{
+        // debug identifiers
+        print("de init is on line \(#line) of \(#function) and \(#file)")
+    }
+
+    
+    
     //MARK:- View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
