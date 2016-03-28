@@ -1,5 +1,5 @@
 # Ios-swift-blocks
-IOS9+ Swift Sample Projects
+Included Swift Sample Projects so far:
 
 - UIViewController
 - UINavigationController with example of: 
