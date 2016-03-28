@@ -7,4 +7,4 @@ Ongoing series of IOS sample projects:
 - UINavigationController with example of: 
     - Center a UILabel using constrainsts
 - Custom ViewController transition with:
-    - Extension to 'Selector' with  static constants holding the selectors we use for each methods we are calling in our class. (Xcode 7.3+)
+    - (Xcode 7.3+) Extension to 'Selector' with  static constants holding the selectors we use for each methods we are calling in our class. 
