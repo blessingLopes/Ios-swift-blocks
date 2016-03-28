@@ -25,11 +25,8 @@ class AViewController: UIViewController {
 		
 			
 		imageView = UIImageView(image: UIImage(named: "me.jpg"))
-		imageView?.center = CGPoint(x: 180.0, y: 300.0)
-		imageView?.contentMode = .ScaleAspectFill
-		imageView?.clipsToBounds = true
 		
-		view.backgroundColor = UIColor.whiteColor()
+		
 		
 		view.addSubview(imageView!)
 		view.addGestureRecognizer(tap)
@@ -40,16 +37,23 @@ class AViewController: UIViewController {
     
   
     
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        imageView?.center = CGPoint(x: 180.0, y: 300.0)
+        imageView?.contentMode = .ScaleAspectFill
+        imageView?.clipsToBounds = false
+    }
     
+
 
     
   
 
 	func action(tap: UIGestureRecognizer){
 		let other = OtherViewController()
-       
-		other.transitioningDelegate = transitionDelegate
-		other.modalPresentationStyle = .Custom
+            other.image =  UIImage(named: "rocket.png")
+            other.transitioningDelegate = transitionDelegate
+            other.modalPresentationStyle = .Custom
         
 		self.presentViewController(other, animated: true, completion: nil)
 		 

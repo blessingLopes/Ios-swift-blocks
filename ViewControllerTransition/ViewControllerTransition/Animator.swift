@@ -37,7 +37,7 @@ class Animator: NSObject, UIViewControllerAnimatedTransitioning {
         
                 
 			toVC.view.alpha = 0.0
-			toVC.imageView!.center = CGPoint(x: 180.0, y: 800.0)
+			toVC.imageView.center = CGPoint(x: 180.0, y: 800.0)
 			
 		
 				
@@ -53,7 +53,7 @@ class Animator: NSObject, UIViewControllerAnimatedTransitioning {
 					
 					
 					toVC.view.alpha = 1.0
-					toVC.imageView!.center = CGPoint(x: 180.0, y: 300.0)
+					toVC.imageView.center = CGPoint(x: 180.0, y: 300.0)
                  
 					
 				}, completion: { (completed) -> () in

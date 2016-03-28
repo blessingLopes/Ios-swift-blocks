@@ -11,9 +11,17 @@ import UIKit
 
 class OtherViewController: UIViewController {
 	
-	var imageView : UIImageView?
+	var imageView : UIImageView = UIImageView()
     
   
+    var image: UIImage? {
+        didSet {
+            if let image = image {
+                imageView.image = image
+            }
+        }
+    }
+
 	
 	override func viewDidLoad(){
 		super.viewDidLoad()
@@ -24,14 +32,9 @@ class OtherViewController: UIViewController {
 		let tap = UITapGestureRecognizer(target: self, action: #selector(OtherViewController.dismissAction(_:)))
 		view.addGestureRecognizer(tap)
 
-		imageView = UIImageView(image: UIImage(named: "rocket.png"))
-		imageView?.center = CGPoint(x: 0.0, y: 300.0)
-//		imageView?.contentMode = .ScaleAspectFill
-//		imageView?.clipsToBounds = true
-		
-		
+        imageView.image = image
 		view.backgroundColor = UIColor.lightGrayColor()
-		view.addSubview(imageView!)
+		view.addSubview(imageView)
 		
 		
 
@@ -39,6 +42,12 @@ class OtherViewController: UIViewController {
 	
 	}
 	
+    override func viewWillLayoutSubviews() {
+        super.viewWillLayoutSubviews()
+        imageView.frame = view.bounds
+        imageView.contentMode = .ScaleAspectFit
+        imageView.clipsToBounds = true
+    }
 
 
     

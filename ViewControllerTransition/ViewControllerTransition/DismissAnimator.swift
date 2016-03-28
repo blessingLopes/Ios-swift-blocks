@@ -44,7 +44,7 @@ class DismissAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 					toVC.imageView!.center = CGPoint(x: 180.0, y: 300.0)
 					
 					fromVC.view.alpha = 0.0
-					fromVC.imageView!.center  = CGPoint(x: 180.0, y: 800.0)
+					//fromVC.imageView.center  = CGPoint(x: 180.0, y: 800.0)
 					
 				}, completion: { (completed) -> () in
 					fromVC.view.removeFromSuperview()
