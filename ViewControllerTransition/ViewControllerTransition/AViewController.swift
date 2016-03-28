@@ -28,7 +28,7 @@ class AViewController: UIViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		
+		print("load    V  i e  w!!")
 		let tap = UITapGestureRecognizer(target: self, action:  .tapInView  )
 
 		imageView = UIImageView(image: UIImage(named: "me.jpg"))

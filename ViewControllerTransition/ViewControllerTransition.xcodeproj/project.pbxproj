@@ -15,6 +15,7 @@
 		640687601CA94F93001DB239 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406875A1CA94F93001DB239 /* Animator.swift */; };
 		640687611CA94F93001DB239 /* DismissAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406875B1CA94F93001DB239 /* DismissAnimator.swift */; };
 		640687621CA94F93001DB239 /* TransitionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6406875C1CA94F93001DB239 /* TransitionDelegate.swift */; };
+		64824D831CA9C6DB0097863A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64824D821CA9C6DB0097863A /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		6406875A1CA94F93001DB239 /* Animator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		6406875B1CA94F93001DB239 /* DismissAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DismissAnimator.swift; sourceTree = "<group>"; };
 		6406875C1CA94F93001DB239 /* TransitionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionDelegate.swift; sourceTree = "<group>"; };
+		64824D821CA9C6DB0097863A /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				640687571CA94F93001DB239 /* AppDelegate.swift */,
+				64824D821CA9C6DB0097863A /* main.swift */,
 				640687581CA94F93001DB239 /* AViewController.swift */,
 				640687591CA94F93001DB239 /* OtherViewController.swift */,
 				6406875A1CA94F93001DB239 /* Animator.swift */,
@@ -149,6 +152,7 @@
 				6406875F1CA94F93001DB239 /* OtherViewController.swift in Sources */,
 				640687621CA94F93001DB239 /* TransitionDelegate.swift in Sources */,
 				640687611CA94F93001DB239 /* DismissAnimator.swift in Sources */,
+				64824D831CA9C6DB0097863A /* main.swift in Sources */,
 				6406875D1CA94F93001DB239 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -298,6 +302,7 @@
 				6406874C1CA94DDA001DB239 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
