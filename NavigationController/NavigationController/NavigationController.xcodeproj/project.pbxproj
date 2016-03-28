@@ -11,8 +11,6 @@
 		646FCCAA1CA788BC00A361F8 /* ColorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646FCCA91CA788BC00A361F8 /* ColorViewController.swift */; };
 		646FCCAF1CA788BC00A361F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 646FCCAE1CA788BC00A361F8 /* Assets.xcassets */; };
 		646FCCB21CA788BC00A361F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 646FCCB01CA788BC00A361F8 /* LaunchScreen.storyboard */; };
-		646FCCBD1CA788BC00A361F8 /* NavigationControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646FCCBC1CA788BC00A361F8 /* NavigationControllerTests.swift */; };
-		646FCCC81CA788BC00A361F8 /* NavigationControllerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646FCCC71CA788BC00A361F8 /* NavigationControllerUITests.swift */; };
 		646FCCE71CA80AC700A361F8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646FCCE61CA80AC700A361F8 /* MainViewController.swift */; };
 		646FCCE81CA80AC700A361F8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646FCCE61CA80AC700A361F8 /* MainViewController.swift */; };
 		646FCCE91CA80AC700A361F8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646FCCE61CA80AC700A361F8 /* MainViewController.swift */; };
@@ -43,11 +41,7 @@
 		646FCCB11CA788BC00A361F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		646FCCB31CA788BC00A361F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		646FCCB81CA788BC00A361F8 /* NavigationControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		646FCCBC1CA788BC00A361F8 /* NavigationControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerTests.swift; sourceTree = "<group>"; };
-		646FCCBE1CA788BC00A361F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		646FCCC31CA788BC00A361F8 /* NavigationControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NavigationControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		646FCCC71CA788BC00A361F8 /* NavigationControllerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationControllerUITests.swift; sourceTree = "<group>"; };
-		646FCCC91CA788BC00A361F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		646FCCE61CA80AC700A361F8 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,8 +74,6 @@
 			isa = PBXGroup;
 			children = (
 				646FCCA61CA788BC00A361F8 /* NavigationController */,
-				646FCCBB1CA788BC00A361F8 /* NavigationControllerTests */,
-				646FCCC61CA788BC00A361F8 /* NavigationControllerUITests */,
 				646FCCA51CA788BB00A361F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -107,24 +99,6 @@
 				646FCCB31CA788BC00A361F8 /* Info.plist */,
 			);
 			path = NavigationController;
-			sourceTree = "<group>";
-		};
-		646FCCBB1CA788BC00A361F8 /* NavigationControllerTests */ = {
-			isa = PBXGroup;
-			children = (
-				646FCCBC1CA788BC00A361F8 /* NavigationControllerTests.swift */,
-				646FCCBE1CA788BC00A361F8 /* Info.plist */,
-			);
-			path = NavigationControllerTests;
-			sourceTree = "<group>";
-		};
-		646FCCC61CA788BC00A361F8 /* NavigationControllerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				646FCCC71CA788BC00A361F8 /* NavigationControllerUITests.swift */,
-				646FCCC91CA788BC00A361F8 /* Info.plist */,
-			);
-			path = NavigationControllerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +244,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				646FCCBD1CA788BC00A361F8 /* NavigationControllerTests.swift in Sources */,
 				646FCCE81CA80AC700A361F8 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,7 +252,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				646FCCC81CA788BC00A361F8 /* NavigationControllerUITests.swift in Sources */,
 				646FCCE91CA80AC700A361F8 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

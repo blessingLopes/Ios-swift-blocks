@@ -9,10 +9,8 @@
 /* Begin PBXBuildFile section */
 		3B6C59121CA41C910007FEC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C59111CA41C910007FEC0 /* AppDelegate.swift */; };
 		3B6C59141CA41C910007FEC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C59131CA41C910007FEC0 /* ViewController.swift */; };
-		3B6C59171CA41C910007FEC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B6C59151CA41C910007FEC0 /* Main.storyboard */; };
 		3B6C59191CA41C910007FEC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B6C59181CA41C910007FEC0 /* Assets.xcassets */; };
-		3B6C59271CA41C910007FEC0 /* IOSBasicsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C59261CA41C910007FEC0 /* IOSBasicsTests.swift */; };
-		3B6C59321CA41C910007FEC0 /* IOSBasicsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B6C59311CA41C910007FEC0 /* IOSBasicsUITests.swift */; };
+		640687641CA95237001DB239 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 640687631CA95237001DB239 /* LaunchScreen.storyboard */; };
 		64FEFD851CA4D2F1009C80B4 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 64FEFD841CA4D2F1009C80B4 /* .gitignore */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +28,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 3B6C590D1CA41C910007FEC0;
 			remoteInfo = IOSBasics;
+		};
+		640687541CA94DDC001DB239 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6406874D1CA94DDA001DB239 /* ViewControllerTransition.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 640687381CA94DDA001DB239;
+			remoteInfo = ViewControllerTransition;
 		};
 		646FCCDB1CA788BD00A361F8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -58,15 +63,12 @@
 		3B6C590E1CA41C910007FEC0 /* IOSBasics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IOSBasics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B6C59111CA41C910007FEC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ViewController/AppDelegate.swift; sourceTree = "<group>"; };
 		3B6C59131CA41C910007FEC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ViewController/ViewController.swift; sourceTree = "<group>"; };
-		3B6C59161CA41C910007FEC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3B6C59181CA41C910007FEC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B6C591D1CA41C910007FEC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B6C59221CA41C910007FEC0 /* IOSBasicsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSBasicsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B6C59261CA41C910007FEC0 /* IOSBasicsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSBasicsTests.swift; sourceTree = "<group>"; };
-		3B6C59281CA41C910007FEC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B6C592D1CA41C910007FEC0 /* IOSBasicsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSBasicsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B6C59311CA41C910007FEC0 /* IOSBasicsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IOSBasicsUITests.swift; sourceTree = "<group>"; };
-		3B6C59331CA41C910007FEC0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6406874D1CA94DDA001DB239 /* ViewControllerTransition.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ViewControllerTransition.xcodeproj; path = ViewControllerTransition/ViewControllerTransition.xcodeproj; sourceTree = "<group>"; };
+		640687631CA95237001DB239 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		646FCCD51CA788BC00A361F8 /* NavigationController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NavigationController.xcodeproj; path = NavigationController/NavigationController/NavigationController.xcodeproj; sourceTree = "<group>"; };
 		64FEFD841CA4D2F1009C80B4 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +103,7 @@
 			children = (
 				646FCCEB1CA81BDC00A361F8 /* ViewController */,
 				646FCCEA1CA81BC300A361F8 /* NavigationController */,
+				640687561CA94DEF001DB239 /* ViewControllerTransition */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,33 +122,29 @@
 			children = (
 				3B6C59111CA41C910007FEC0 /* AppDelegate.swift */,
 				3B6C59131CA41C910007FEC0 /* ViewController.swift */,
-				3B6C59151CA41C910007FEC0 /* Main.storyboard */,
 				3B6C59181CA41C910007FEC0 /* Assets.xcassets */,
 				3B6C591D1CA41C910007FEC0 /* Info.plist */,
 				64FEFD841CA4D2F1009C80B4 /* .gitignore */,
+				640687631CA95237001DB239 /* LaunchScreen.storyboard */,
 			);
 			name = ViewController;
 			path = IOSBasics;
 			sourceTree = "<group>";
 		};
-		3B6C59251CA41C910007FEC0 /* ViewControllerTests */ = {
+		6406874E1CA94DDA001DB239 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B6C59261CA41C910007FEC0 /* IOSBasicsTests.swift */,
-				3B6C59281CA41C910007FEC0 /* Info.plist */,
+				640687551CA94DDC001DB239 /* ViewControllerTransition.app */,
 			);
-			name = ViewControllerTests;
-			path = IOSBasicsTests;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		3B6C59301CA41C910007FEC0 /* ViewControllerUITests */ = {
+		640687561CA94DEF001DB239 /* ViewControllerTransition */ = {
 			isa = PBXGroup;
 			children = (
-				3B6C59311CA41C910007FEC0 /* IOSBasicsUITests.swift */,
-				3B6C59331CA41C910007FEC0 /* Info.plist */,
+				6406874D1CA94DDA001DB239 /* ViewControllerTransition.xcodeproj */,
 			);
-			name = ViewControllerUITests;
-			path = IOSBasicsUITests;
+			name = ViewControllerTransition;
 			sourceTree = "<group>";
 		};
 		646FCCD61CA788BC00A361F8 /* Products */ = {
@@ -170,8 +169,6 @@
 			isa = PBXGroup;
 			children = (
 				3B6C59101CA41C910007FEC0 /* ViewController */,
-				3B6C59251CA41C910007FEC0 /* ViewControllerTests */,
-				3B6C59301CA41C910007FEC0 /* ViewControllerUITests */,
 				3B6C590F1CA41C910007FEC0 /* Products */,
 			);
 			name = ViewController;
@@ -272,6 +269,10 @@
 					ProductGroup = 646FCCD61CA788BC00A361F8 /* Products */;
 					ProjectRef = 646FCCD51CA788BC00A361F8 /* NavigationController.xcodeproj */;
 				},
+				{
+					ProductGroup = 6406874E1CA94DDA001DB239 /* Products */;
+					ProjectRef = 6406874D1CA94DDA001DB239 /* ViewControllerTransition.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
@@ -283,6 +284,13 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
+		640687551CA94DDC001DB239 /* ViewControllerTransition.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = ViewControllerTransition.app;
+			remoteRef = 640687541CA94DDC001DB239 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		646FCCDC1CA788BD00A361F8 /* NavigationController.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
@@ -311,9 +319,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				640687641CA95237001DB239 /* LaunchScreen.storyboard in Resources */,
 				3B6C59191CA41C910007FEC0 /* Assets.xcassets in Resources */,
 				64FEFD851CA4D2F1009C80B4 /* .gitignore in Resources */,
-				3B6C59171CA41C910007FEC0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,7 +355,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B6C59271CA41C910007FEC0 /* IOSBasicsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +362,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B6C59321CA41C910007FEC0 /* IOSBasicsUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,17 +379,6 @@
 			targetProxy = 3B6C592E1CA41C910007FEC0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3B6C59151CA41C910007FEC0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3B6C59161CA41C910007FEC0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3B6C59341CA41C910007FEC0 /* Debug */ = {
