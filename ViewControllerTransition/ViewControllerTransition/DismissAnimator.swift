@@ -26,7 +26,8 @@ class DismissAnimator: NSObject, UIViewControllerAnimatedTransitioning {
 			let container = transitionContext.containerView()
 			container?.addSubview(fromVC.view)
                 
-            fromVC.view.frame = (container?.bounds)!
+           // TODO: check this
+            // fromVC.view.frame = (container?.bounds)!
               
 			fromVC.view.alpha = 1.0
 			

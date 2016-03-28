@@ -31,8 +31,9 @@ class Animator: NSObject, UIViewControllerAnimatedTransitioning {
 			let container = transitionContext.containerView()
 			container?.addSubview(toVC.view)
 			
-           container?.frame = UIScreen.mainScreen().bounds
-			toVC.view.frame = (container?.bounds)!
+            //TODO: check this
+            // container?.frame = UIScreen.mainScreen().bounds
+            //	toVC.view.frame = (container?.bounds)!
         
                 
 			toVC.view.alpha = 0.0
