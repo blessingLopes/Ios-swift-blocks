@@ -8,10 +8,18 @@
 
 import UIKit
 
+
+// A private extension to Selector. 
+// All the properties added here are exclusive to This swift file and cannot be accessed from outside it.
+private extension Selector{
+    static let tapInView = #selector(AViewController.action(_:))
+}
+
+
+
 class AViewController: UIViewController {
 
 	var imageView : UIImageView?
-	
 	let transitionDelegate = TransitionDelegate()
 	
 	
@@ -21,16 +29,12 @@ class AViewController: UIViewController {
 		super.viewDidLoad()
 
 		
-		let tap = UITapGestureRecognizer(target: self, action: #selector(AViewController.action(_:)))
-		
-			
+		let tap = UITapGestureRecognizer(target: self, action:  .tapInView  )
+
 		imageView = UIImageView(image: UIImage(named: "me.jpg"))
-		
-		
-		
-		view.addSubview(imageView!)
-		view.addGestureRecognizer(tap)
         
+        view.addSubview(imageView!)
+		view.addGestureRecognizer(tap)
         view.backgroundColor = UIColor.blueColor()
         
 	}
@@ -39,6 +43,7 @@ class AViewController: UIViewController {
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
+        
         imageView?.center = CGPoint(x: 180.0, y: 300.0)
         imageView?.contentMode = .ScaleAspectFill
         imageView?.clipsToBounds = false
