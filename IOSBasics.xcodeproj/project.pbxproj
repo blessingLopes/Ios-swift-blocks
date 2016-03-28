@@ -36,21 +36,21 @@
 			remoteGlobalIDString = 640687381CA94DDA001DB239;
 			remoteInfo = ViewControllerTransition;
 		};
-		646FCCDB1CA788BD00A361F8 /* PBXContainerItemProxy */ = {
+		64D140AB1CA95887001B82F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 646FCCD51CA788BC00A361F8 /* NavigationController.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 646FCCA41CA788BB00A361F8;
 			remoteInfo = NavigationController;
 		};
-		646FCCDD1CA788BD00A361F8 /* PBXContainerItemProxy */ = {
+		64D140AD1CA95887001B82F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 646FCCD51CA788BC00A361F8 /* NavigationController.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 646FCCB81CA788BC00A361F8;
 			remoteInfo = NavigationControllerTests;
 		};
-		646FCCDF1CA788BD00A361F8 /* PBXContainerItemProxy */ = {
+		64D140AF1CA95887001B82F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 646FCCD51CA788BC00A361F8 /* NavigationController.xcodeproj */;
 			proxyType = 2;
@@ -69,7 +69,7 @@
 		3B6C592D1CA41C910007FEC0 /* IOSBasicsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IOSBasicsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6406874D1CA94DDA001DB239 /* ViewControllerTransition.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ViewControllerTransition.xcodeproj; path = ViewControllerTransition/ViewControllerTransition.xcodeproj; sourceTree = "<group>"; };
 		640687631CA95237001DB239 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		646FCCD51CA788BC00A361F8 /* NavigationController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NavigationController.xcodeproj; path = NavigationController/NavigationController/NavigationController.xcodeproj; sourceTree = "<group>"; };
+		646FCCD51CA788BC00A361F8 /* NavigationController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NavigationController.xcodeproj; path = NavigationController/NavigationController.xcodeproj; sourceTree = "<group>"; };
 		64FEFD841CA4D2F1009C80B4 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,16 +147,6 @@
 			name = ViewControllerTransition;
 			sourceTree = "<group>";
 		};
-		646FCCD61CA788BC00A361F8 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				646FCCDC1CA788BD00A361F8 /* NavigationController.app */,
-				646FCCDE1CA788BD00A361F8 /* NavigationControllerTests.xctest */,
-				646FCCE01CA788BD00A361F8 /* NavigationControllerUITests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		646FCCEA1CA81BC300A361F8 /* NavigationController */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +162,16 @@
 				3B6C590F1CA41C910007FEC0 /* Products */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		64D140A61CA95887001B82F3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64D140AC1CA95887001B82F3 /* NavigationController.app */,
+				64D140AE1CA95887001B82F3 /* NavigationControllerTests.xctest */,
+				64D140B01CA95887001B82F3 /* NavigationControllerUITests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +266,7 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 646FCCD61CA788BC00A361F8 /* Products */;
+					ProductGroup = 64D140A61CA95887001B82F3 /* Products */;
 					ProjectRef = 646FCCD51CA788BC00A361F8 /* NavigationController.xcodeproj */;
 				},
 				{
@@ -291,25 +291,25 @@
 			remoteRef = 640687541CA94DDC001DB239 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		646FCCDC1CA788BD00A361F8 /* NavigationController.app */ = {
+		64D140AC1CA95887001B82F3 /* NavigationController.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = NavigationController.app;
-			remoteRef = 646FCCDB1CA788BD00A361F8 /* PBXContainerItemProxy */;
+			remoteRef = 64D140AB1CA95887001B82F3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		646FCCDE1CA788BD00A361F8 /* NavigationControllerTests.xctest */ = {
+		64D140AE1CA95887001B82F3 /* NavigationControllerTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = NavigationControllerTests.xctest;
-			remoteRef = 646FCCDD1CA788BD00A361F8 /* PBXContainerItemProxy */;
+			remoteRef = 64D140AD1CA95887001B82F3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		646FCCE01CA788BD00A361F8 /* NavigationControllerUITests.xctest */ = {
+		64D140B01CA95887001B82F3 /* NavigationControllerUITests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = NavigationControllerUITests.xctest;
-			remoteRef = 646FCCDF1CA788BD00A361F8 /* PBXContainerItemProxy */;
+			remoteRef = 64D140AF1CA95887001B82F3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
