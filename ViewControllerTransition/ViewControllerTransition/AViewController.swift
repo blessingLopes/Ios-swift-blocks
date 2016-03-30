@@ -35,7 +35,7 @@ class AViewController: UIViewController {
         
         view.addSubview(imageView!)
 		view.addGestureRecognizer(tap)
-        view.backgroundColor = UIColor.blueColor()
+        view.backgroundColor = Configuration.CustomColor.forAstronautBackground
         
 	}
     

@@ -33,7 +33,7 @@ class OtherViewController: UIViewController {
 		view.addGestureRecognizer(tap)
 
         imageView.image = image
-		view.backgroundColor = UIColor.lightGrayColor()
+		view.backgroundColor = Configuration.DefaultColor
 		view.addSubview(imageView)
 		
 		

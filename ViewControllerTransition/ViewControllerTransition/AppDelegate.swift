@@ -37,7 +37,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         // Alternatively use just:
-       
 //        dispatch_async(dispatch_get_main_queue()) { () -> Void in
 //            print("*** App Launched in: \(CFAbsoluteTimeGetCurrent() - START_TIME ) sec" )
 //        }
