@@ -5,6 +5,6 @@ Included Swift Sample Projects so far:
 - UINavigationController with example of: 
     - Center a UILabel using constrainsts
 - Custom ViewController transition with:
-    - (Xcode 7.3+, Swift 2.2+) Extension to the 'Selector' type with static constants holding the selectors for the methods we are calling in our class. 
+    -  Extension to the 'Selector' type with static constants holding the selectors for the methods we are calling in our class. (Uusable in Xcode 7.3+, Swift 2.2+)
     - Log for the app launch time.
     - Enum with no cases holding namespaced constants for the Colors in the app.
