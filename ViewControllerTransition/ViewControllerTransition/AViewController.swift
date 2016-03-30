@@ -31,7 +31,7 @@ class AViewController: UIViewController {
 		print("load    V  i e  w!!")
 		let tap = UITapGestureRecognizer(target: self, action:  .tapInView  )
 
-		imageView = UIImageView(image: UIImage(named: "me.jpg"))
+		imageView = UIImageView(image: Pictures.Me.image())
         
         view.addSubview(imageView!)
 		view.addGestureRecognizer(tap)
@@ -56,7 +56,7 @@ class AViewController: UIViewController {
 
 	func action(tap: UIGestureRecognizer){
 		let other = OtherViewController()
-            other.image =  UIImage(named: "rocket.png")
+            other.image =  Pictures.Rocket.image()
             other.transitioningDelegate = transitionDelegate
             other.modalPresentationStyle = .Custom
         
