@@ -1,5 +1,4 @@
 # Ios-swift-blocks
-Included Swift Sample Projects so far:
 
 * **UIViewController**
 * **UINavigationController** with example of: 
