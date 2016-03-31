@@ -7,4 +7,5 @@
 * **Custom** **ViewController** **transition** with:
 	*  Extension to the 'Selector' type with static constants holding the selectors for the methods we are calling in our class. (Uusable in Xcode 7.3+, Swift 2.2+)
 	* Log for the app launch time.
-	* Enum with no cases holding namespaced constants for the Colors in the app.
+	* An Enum with no cases holding namespaced constants for the Colors in the app.
+	* A  Enum type creating our namespace for constants representing the images used in the app. 
