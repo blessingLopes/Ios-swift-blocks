@@ -9,6 +9,16 @@
 import UIKit
 
 
+
+
+
+private extension Selector{
+    static let tapInView = #selector(OtherViewController.dismissAction(_:))
+    
+}
+
+
+
 class OtherViewController: UIViewController {
 	
 	var imageView : UIImageView = UIImageView()
@@ -29,7 +39,7 @@ class OtherViewController: UIViewController {
         // this will make the view adjust its position when the in-call status bar appear/disappears
 		//view.autoresizingMask = [ .FlexibleTopMargin, .FlexibleBottomMargin]
         
-		let tap = UITapGestureRecognizer(target: self, action: #selector(OtherViewController.dismissAction(_:)))
+		let tap = UITapGestureRecognizer(target: self, action: .tapInView )
 		view.addGestureRecognizer(tap)
 
         imageView.image = image
@@ -54,6 +64,7 @@ class OtherViewController: UIViewController {
 	
     func dismissAction(tap: UIGestureRecognizer){
 
+        image = Pictures.Rocket.image(selected: true)
         dismissViewControllerAnimated(true, completion: nil )
         
 	}

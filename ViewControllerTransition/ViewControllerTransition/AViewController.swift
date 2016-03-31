@@ -13,6 +13,7 @@ import UIKit
 // All the properties added here are exclusive to This swift file and cannot be accessed from outside it.
 private extension Selector{
     static let tapInView = #selector(AViewController.action(_:))
+    
 }
 
 

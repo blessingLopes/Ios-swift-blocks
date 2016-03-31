@@ -8,19 +8,20 @@
 
 import UIKit
 
-// This allows for  no explicit hard-coded strings at all in our Viewcontroller! We now have constants for all of our images names.
-// If a string ii misspelled here there will be an exception at run time. 
-// If we use regular UIimage in the viewcontroller with a wrong file name there is no exception - the image simply does not show.
+// This allows for no explicit hard-coded strings in all in our Viewcontroller! We now have constants for all of our images names.
+// If a image name string is misspelled, though,  there will be an exception at run time.
+
+// Using a tradicional UIImage(named: "name.jpg") does NOT raise an exception if the file is misspplled.
 enum Pictures: String {
-    case Rocket = "rocket.png"
-    case Me     = "me.jpg"
+    case Rocket = "rocket"
+    case Me     = "me"
 
 
-    func image() -> UIImage{
-        return UIImage(named: self.rawValue)!
     
+    func image(selected selected: Bool = false) -> UIImage {
+        return UIImage(named: selected ? self.rawValue + "-selected" : self.rawValue)!
     }
-    
+ 
 
 }
 
