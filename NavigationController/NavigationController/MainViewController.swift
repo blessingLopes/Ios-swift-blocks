@@ -8,6 +8,12 @@
 import UIKit
 
 
+private extension Selector{
+    static let tapInView = #selector(MainViewController.tapInView(_:))
+
+}
+
+
 class MainViewController: UIViewController {
     
     // MARK: Stored Properties
@@ -69,7 +75,7 @@ class MainViewController: UIViewController {
         
         
         // add the gesture recognizer to the View
-        let tap = UITapGestureRecognizer(target: self, action: #selector(MainViewController.tapInView(_:)))
+        let tap = UITapGestureRecognizer(target: self, action: .tapInView)
         tap.numberOfTapsRequired = 1
         view.addGestureRecognizer(tap)
         
