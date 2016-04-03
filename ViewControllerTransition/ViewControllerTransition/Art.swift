@@ -8,6 +8,8 @@
 
 import UIKit
 
+/*
+
 // This allows for no explicit hard-coded strings in all in our Viewcontroller! We now have constants for all of our images names.
 // If a image name string is misspelled, though,  there will be an exception at run time.
 
@@ -25,4 +27,28 @@ enum Pictures: String {
 
 }
 
+*/
 
+
+
+
+// In case of a misspell, this approach doesn't throw an exception. Albeit the fact that it may be a little heavy handed to 'invade' UIImage namespace for this purpose
+extension UIImage{
+    
+    enum AssetIdentifier: String {
+        // Image Names of Pictures
+        case Rocket
+        case Me
+        case RocketSelected
+        
+        func image(selected selected: Bool = false) -> AssetIdentifier {
+            return selected ? AssetIdentifier(rawValue: self.rawValue + "Selected")! : self
+        }
+    }
+    
+    convenience init!(assetIdentifier: AssetIdentifier) {
+        self.init(named: assetIdentifier.rawValue)
+    }
+    
+    
+}

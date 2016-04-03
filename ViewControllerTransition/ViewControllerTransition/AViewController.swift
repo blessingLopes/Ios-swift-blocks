@@ -18,6 +18,8 @@ private extension Selector{
 
 
 
+
+
 class AViewController: UIViewController {
 
 	var imageView : UIImageView?
@@ -32,7 +34,7 @@ class AViewController: UIViewController {
 		print("load    V  i e  w!!")
 		let tap = UITapGestureRecognizer(target: self, action:  .tapInView  )
 
-		imageView = UIImageView(image: Pictures.Me.image())
+		imageView = UIImageView(image: UIImage(assetIdentifier: .Me))
         
         view.addSubview(imageView!)
 		view.addGestureRecognizer(tap)
@@ -57,7 +59,7 @@ class AViewController: UIViewController {
 
 	func action(tap: UIGestureRecognizer){
 		let other = OtherViewController()
-            other.image =  Pictures.Rocket.image()
+            other.image =  UIImage(assetIdentifier: .Rocket)
             other.transitioningDelegate = transitionDelegate
             other.modalPresentationStyle = .Custom
         

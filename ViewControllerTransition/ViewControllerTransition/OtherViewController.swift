@@ -64,7 +64,7 @@ class OtherViewController: UIViewController {
 	
     func dismissAction(tap: UIGestureRecognizer){
 
-        image = Pictures.Rocket.image(selected: true)
+        image = UIImage(assetIdentifier: UIImage.AssetIdentifier.Rocket.image(selected: true))
         dismissViewControllerAnimated(true, completion: nil )
         
 	}
