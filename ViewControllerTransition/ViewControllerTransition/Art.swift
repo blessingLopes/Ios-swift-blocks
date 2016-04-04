@@ -32,23 +32,33 @@ enum Pictures: String {
 
 
 
-// In case of a misspell, this approach doesn't throw an exception. Albeit the fact that it may be a little heavy handed to 'invade' UIImage namespace for this purpose
+// In case of a misspell, this approach doesn't throw an exception. Albeit the fact that it may be a little heavy handed to 'invade' UIImage namespace for this purpose.
+// However, if the file name of an image changes one day, you have to change the identifier as well. And then you have to change the call at all positions in your project. So I think it would be a good idea to assign explicit raw values to the enum cases.
+
+
 extension UIImage{
     
-    enum AssetIdentifier: String {
+    enum ImageId: String {
         // Image Names of Pictures
-        case Rocket
-        case Me
-        case RocketSelected
+        case Rocket         = "Rocket"
+        case Me             = "Me"
+        case RocketSelected = "RocketSelect"
         
-        func image(selected selected: Bool = false) -> AssetIdentifier {
-            return selected ? AssetIdentifier(rawValue: self.rawValue + "Selected")! : self
+        func isSelected( selected: Bool = false) -> ImageId {
+            return selected ? ImageId(rawValue: rawValue + "Select")! : self
         }
     }
     
-    convenience init!(assetIdentifier: AssetIdentifier) {
-        self.init(named: assetIdentifier.rawValue)
+    convenience init!(imageId: ImageId) {
+        self.init(named: imageId.rawValue)
     }
     
     
 }
+
+
+
+
+
+
+
