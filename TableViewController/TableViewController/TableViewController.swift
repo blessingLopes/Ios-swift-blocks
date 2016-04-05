@@ -10,7 +10,7 @@
 import UIKit
 
 
-let AllStrings = "ALLSTRINGS"
+let cellID = "ALLSTRINGS"
 
 
 class TableViewContoller: UITableViewController {
@@ -24,7 +24,7 @@ class TableViewContoller: UITableViewController {
         super.init(nibName: nil, bundle: nil)
         
         //register the table view cell class
-        tableView.registerClass( TableViewCell.self, forCellReuseIdentifier: AllStrings)
+        tableView.registerClass( TableViewCell.self, forCellReuseIdentifier: cellID)
         
         // set up data source and delegate
         tableView.dataSource = self
@@ -78,9 +78,9 @@ class TableViewContoller: UITableViewController {
         
         
         // NEEDS to be registered BEFORE its gets dequeued
-        var cell  = tableView.dequeueReusableCellWithIdentifier(AllStrings, forIndexPath: indexPath) as? TableViewCell
+        var cell  = tableView.dequeueReusableCellWithIdentifier(cellID, forIndexPath: indexPath) as? TableViewCell
         if (cell == nil){
-            cell = TableViewCell(style: .Default, reuseIdentifier: AllStrings)
+            cell = TableViewCell(style: .Default, reuseIdentifier: cellID)
         }
         //cell!.accessoryType = .DisclosureIndicator
         
