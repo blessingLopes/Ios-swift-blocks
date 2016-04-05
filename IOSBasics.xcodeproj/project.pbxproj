@@ -36,6 +36,13 @@
 			remoteGlobalIDString = 640687381CA94DDA001DB239;
 			remoteInfo = ViewControllerTransition;
 		};
+		648177FA1CB3D75A009ADA8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 648177F61CB3D759009ADA8D /* TableViewController.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 648177E11CB3D758009ADA8D;
+			remoteInfo = TableViewController;
+		};
 		64D140AB1CA95887001B82F3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 646FCCD51CA788BC00A361F8 /* NavigationController.xcodeproj */;
@@ -70,6 +77,7 @@
 		6406874D1CA94DDA001DB239 /* ViewControllerTransition.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ViewControllerTransition.xcodeproj; path = ViewControllerTransition/ViewControllerTransition.xcodeproj; sourceTree = "<group>"; };
 		640687631CA95237001DB239 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		646FCCD51CA788BC00A361F8 /* NavigationController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = NavigationController.xcodeproj; path = NavigationController/NavigationController.xcodeproj; sourceTree = "<group>"; };
+		648177F61CB3D759009ADA8D /* TableViewController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = TableViewController.xcodeproj; path = TableViewController/TableViewController.xcodeproj; sourceTree = "<group>"; };
 		64FEFD841CA4D2F1009C80B4 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,6 +109,7 @@
 		3B6C59051CA41C910007FEC0 = {
 			isa = PBXGroup;
 			children = (
+				648177FC1CB3D75F009ADA8D /* TableViewController */,
 				646FCCEB1CA81BDC00A361F8 /* ViewController */,
 				646FCCEA1CA81BC300A361F8 /* NavigationController */,
 				640687561CA94DEF001DB239 /* ViewControllerTransition */,
@@ -162,6 +171,22 @@
 				3B6C590F1CA41C910007FEC0 /* Products */,
 			);
 			name = ViewController;
+			sourceTree = "<group>";
+		};
+		648177F71CB3D759009ADA8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				648177FB1CB3D75A009ADA8D /* TableViewController.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		648177FC1CB3D75F009ADA8D /* TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				648177F61CB3D759009ADA8D /* TableViewController.xcodeproj */,
+			);
+			name = TableViewController;
 			sourceTree = "<group>";
 		};
 		64D140A61CA95887001B82F3 /* Products */ = {
@@ -270,6 +295,10 @@
 					ProjectRef = 646FCCD51CA788BC00A361F8 /* NavigationController.xcodeproj */;
 				},
 				{
+					ProductGroup = 648177F71CB3D759009ADA8D /* Products */;
+					ProjectRef = 648177F61CB3D759009ADA8D /* TableViewController.xcodeproj */;
+				},
+				{
 					ProductGroup = 6406874E1CA94DDA001DB239 /* Products */;
 					ProjectRef = 6406874D1CA94DDA001DB239 /* ViewControllerTransition.xcodeproj */;
 				},
@@ -289,6 +318,13 @@
 			fileType = wrapper.application;
 			path = ViewControllerTransition.app;
 			remoteRef = 640687541CA94DDC001DB239 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		648177FB1CB3D75A009ADA8D /* TableViewController.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = TableViewController.app;
+			remoteRef = 648177FA1CB3D75A009ADA8D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 		64D140AC1CA95887001B82F3 /* NavigationController.app */ = {
@@ -473,7 +509,7 @@
 				INFOPLIST_FILE = IOSBasics/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Blessing.IOSBasics;
+				PRODUCT_BUNDLE_IDENTIFIER = Manuel.IOSBasics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -485,7 +521,7 @@
 				INFOPLIST_FILE = IOSBasics/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Blessing.IOSBasics;
+				PRODUCT_BUNDLE_IDENTIFIER = Manuel.IOSBasics;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
