@@ -9,3 +9,4 @@
 	* Log for the app launch time.
 	* An Enum with no cases holding namespaced constants for the Colors in the app.
 	* A  Enum type creating our namespace for constants representing the images used in the app. 
+* Simple TableViewController
