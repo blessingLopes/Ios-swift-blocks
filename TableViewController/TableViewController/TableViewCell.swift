@@ -13,36 +13,37 @@ import UIKit
 class TableViewCell: UITableViewCell {
     
     
-    let titleLabel : UILabel
+    let titleLabel : UILabel = UILabel()
     
     
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String!)	{
-        
-        titleLabel = UILabel()
-        
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
-        titleLabel.frame = CGRectMake(0.0, 0.0, bounds.width, bounds.height)
-        titleLabel.lineBreakMode = .ByTruncatingTail
-        titleLabel.numberOfLines = 1 // set to 0 to force to display untruncated text.
-        titleLabel.textAlignment = .Center
-        titleLabel.textColor = UIColor.whiteColor()
-        titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
-        
-        contentView.backgroundColor = UIColor.grayColor()
-        contentView.addSubview(titleLabel)
+        setup()
         
     }
-    
     
     
     required init?(coder aDecoder: NSCoder)	{
-        fatalError("init(coder:) has not been implemented")
+        super.init(coder: aDecoder)
+        setup()
     }
     
     
+ private func setup(){
     
+    titleLabel.frame = CGRectMake(0.0, 0.0, bounds.width, bounds.height)
+    titleLabel.lineBreakMode = .ByTruncatingTail
+    titleLabel.numberOfLines = 1 // set to 0 to force to display untruncated text.
+    titleLabel.textAlignment = .Center
+    titleLabel.textColor = UIColor.whiteColor()
+    titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
+    
+    contentView.backgroundColor = UIColor.grayColor()
+    contentView.addSubview(titleLabel)
+
+    
+}
     
     
     
