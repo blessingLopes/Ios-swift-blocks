@@ -18,8 +18,9 @@ class MainViewController: UIViewController {
     // keep track of which view controller is currently being displayed inside our container
     private var activeViewController : UIViewController? {
         willSet{ addActiveViewcontroller( newValue ) }
-        // not necessary since there's only one being added
-        //didSet{  removeInactiveViewController( oldValue ) }
+        
+        // not stricly necessary since there's only one being added
+        didSet{  removeInactiveViewController( oldValue ) }
         
     }
     

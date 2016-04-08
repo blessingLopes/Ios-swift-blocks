@@ -12,6 +12,7 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     
+    class var reuseIdentifier: String { return "\(self)"}
     
     let titleLabel : UILabel = UILabel()
     
