@@ -15,7 +15,7 @@ class TableViewCell: UITableViewCell {
     class var reuseIdentifier: String { return "\(self)"}
     
     let titleLabel : UILabel = UILabel()
-    
+
     
     
     override init(style: UITableViewCellStyle, reuseIdentifier: String!)	{
@@ -49,4 +49,10 @@ class TableViewCell: UITableViewCell {
     
     
 }// ENd
+
+
+
+
+
+
 

@@ -82,7 +82,7 @@ class TableViewContoller: UITableViewController {
         if (cell == nil){
             cell = TableViewCell(style: .Default, reuseIdentifier: TableViewCell.reuseIdentifier)
         }
-        //cell!.accessoryType = .DisclosureIndicator
+        cell!.accessoryType = .DisclosureIndicator
         
         // provide the string from the data source
         cell!.titleLabel.text = dataSource[indexPath.item]
@@ -92,6 +92,15 @@ class TableViewContoller: UITableViewController {
         
     }
     
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        
+        let nameVC = NameViewController()
+        nameVC.fullName =  dataSource[indexPath.row]
+        navigationController?.pushViewController(nameVC, animated: true)
+    }
+    
+
     
     
 }// END

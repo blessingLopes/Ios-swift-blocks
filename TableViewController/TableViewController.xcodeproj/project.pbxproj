@@ -13,6 +13,7 @@
 		648177EF1CB3D759009ADA8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 648177ED1CB3D759009ADA8D /* LaunchScreen.storyboard */; };
 		648177FE1CB3D800009ADA8D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648177FD1CB3D800009ADA8D /* TableViewCell.swift */; };
 		648178001CB3D82F009ADA8D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648177FF1CB3D82F009ADA8D /* TableViewController.swift */; };
+		648178051CBB47B0009ADA8D /* NameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 648178041CBB47B0009ADA8D /* NameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		648177F01CB3D759009ADA8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		648177FD1CB3D800009ADA8D /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		648177FF1CB3D82F009ADA8D /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		648178041CBB47B0009ADA8D /* NameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				648177E41CB3D759009ADA8D /* AppDelegate.swift */,
 				648177E61CB3D759009ADA8D /* MainViewController.swift */,
+				648178041CBB47B0009ADA8D /* NameViewController.swift */,
 				648177FD1CB3D800009ADA8D /* TableViewCell.swift */,
 				648177FF1CB3D82F009ADA8D /* TableViewController.swift */,
 				648177EB1CB3D759009ADA8D /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 				648177E71CB3D759009ADA8D /* MainViewController.swift in Sources */,
 				648177E51CB3D759009ADA8D /* AppDelegate.swift in Sources */,
 				648178001CB3D82F009ADA8D /* TableViewController.swift in Sources */,
+				648178051CBB47B0009ADA8D /* NameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +292,7 @@
 				648177F51CB3D759009ADA8D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
