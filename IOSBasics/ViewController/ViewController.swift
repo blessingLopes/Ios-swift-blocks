@@ -48,9 +48,6 @@ class ViewController: UIViewController {
     // MARK:- View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-
         setupViewController()
     }
     

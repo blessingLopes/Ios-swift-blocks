@@ -54,7 +54,7 @@ class TableViewContoller: UITableViewController {
         //Table view config
         tableView.rowHeight = 92.0
         tableView.separatorStyle = .None
-        tableView.backgroundColor = UIColor.blackColor()
+        tableView.backgroundColor = .whiteColor()
         
         
     }
@@ -64,8 +64,6 @@ class TableViewContoller: UITableViewController {
     //MARK:- tableview dataSource Methods
     
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        
-        
         return 1
     }
     
@@ -95,8 +93,7 @@ class TableViewContoller: UITableViewController {
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         
-        let nameVC = NameViewController()
-        nameVC.fullName =  dataSource[indexPath.row]
+        let nameVC = NameViewController(withName: dataSource[indexPath.row] )
         navigationController?.pushViewController(nameVC, animated: true)
     }
     

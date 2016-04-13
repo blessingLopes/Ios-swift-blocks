@@ -36,7 +36,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor.lightGrayColor()
+//        view.backgroundColor = .whiteColor()
         
         activeViewController = table
         

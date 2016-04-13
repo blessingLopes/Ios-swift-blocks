@@ -37,10 +37,10 @@ class TableViewCell: UITableViewCell {
     titleLabel.lineBreakMode = .ByTruncatingTail
     titleLabel.numberOfLines = 1 // set to 0 to force to display untruncated text.
     titleLabel.textAlignment = .Center
-    titleLabel.textColor = UIColor.whiteColor()
+    titleLabel.textColor = .darkGrayColor()
     titleLabel.font = UIFont.preferredFontForTextStyle(UIFontTextStyleSubheadline)
     
-    contentView.backgroundColor = UIColor.grayColor()
+
     contentView.addSubview(titleLabel)
 
     
