@@ -16,7 +16,7 @@ import UIKit
 class TableViewContoller: UITableViewController {
     
     // Array to use as data source for the tableView
-    let dataSource : [String] = ["era", "uma", "vez", "um", "broken", "heart" ]
+    let dataSource : [String] = ["era", "uma", "vez", "um", "broken", "heart" , "another", "love", "way", "to", "do"]
     
     
     //MARK:- Initializers
