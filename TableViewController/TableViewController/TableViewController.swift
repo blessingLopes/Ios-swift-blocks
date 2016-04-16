@@ -20,7 +20,7 @@ class TableViewContoller: UITableViewController {
     
     
     // Array to use as data source for the tableView
-    let dataSource : [String] = ["era", "uma", "vez", "um", "broken", "heart" , "another", "love", "way", "to", "do",   "This life, which had been the tomb of his virtue and of his honor, is but a walking shadow; a poor player, that struts and frets his hour upon the stage, and then is heard no more: it is a tale told by an idiot, full of sound and fury, signifying nothing.", "end"
+    let dataSource : [String] = ["This life, which had been the tomb of his virtue and of his honor, is but a walking shadow; a poor player, that struts and frets his hour upon the stage, and then is heard no more: it is a tale told by an idiot, full of sound and fury, signifying nothing.","era", "uma", "vez", "um", "broken", "heart" , "another", "love", "way", "to that struts and frets his hour up that struts and frets his hour up that struts and frets his hour up that struts and frets his hour up", "do",    "end"
 ]
     
     
@@ -62,25 +62,11 @@ class TableViewContoller: UITableViewController {
         tableView.rowHeight = UITableViewAutomaticDimension
         
         //Table view config
-        tableView.separatorStyle = .None
+        tableView.separatorStyle = .SingleLine
         tableView.backgroundColor = .whiteColor()
         
-//        setupFontSizeOberver()
-        // Set up font change observer
-        let application = UIApplication.sharedApplication()
-        let notificationCenter = NSNotificationCenter.defaultCenter()
-        let queue = NSOperationQueue.mainQueue()
-        
-        fontChangeObserver = notificationCenter.addObserverForName(UIContentSizeCategoryDidChangeNotification, object: application, queue: queue) { [unowned self] _ in
-            /*
-             The user has changed the system font sizes, reset the the labels'
-             fonts to apply the new sizes.
-             */
-            
-            self.tableView.invalidateIntrinsicContentSize()
-            
-        }
-
+        setupFontSizeOberver()
+      
      
     }
     
@@ -106,10 +92,9 @@ class TableViewContoller: UITableViewController {
             cell = TableViewCell(style: .Default, reuseIdentifier: TableViewCell.reuseIdentifier)
         }
         cell!.accessoryType = .DisclosureIndicator
-        
+
         // provide the string from the data source
         cell!.label.text = dataSource[indexPath.item]
-        
         
         return cell!
         
@@ -132,14 +117,21 @@ class TableViewContoller: UITableViewController {
         fontChangeObserver = notificationCenter.addObserverForName(UIContentSizeCategoryDidChangeNotification, object: application, queue: queue) { [unowned self] _ in
             /*
              The user has changed the system font sizes, reset the the labels'
-             fonts to apply the new sizes.
+             fonts so we need to apply the new sizes.
              */
-
+            
             self.tableView.invalidateIntrinsicContentSize()
+
          
         }
 
     }
+    
+    
+    
+    
+    
+    
     
     
 }// END

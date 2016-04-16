@@ -40,30 +40,39 @@ class TableViewCell: UITableViewCell {
     label.textColor = .darkGrayColor()
     label.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
     label.translatesAutoresizingMaskIntoConstraints = false
-
     contentView.addSubview(label)
     
-    
-    // set constraint on label
-    
-    let margins = contentView.layoutMarginsGuide
-    
-    // Pin the leading edge of myView to the superview  (cell's contentView) leading edge
-    label.leadingAnchor.constraintEqualToAnchor(margins.leadingAnchor).active = true
-    
-    // Pin the trailing edge of myView to the superview (cell's contentView) trailing edge
-    label.trailingAnchor.constraintEqualToAnchor(margins.trailingAnchor).active = true
-    
-    // Pin the top edge of the label to the top margin of the superview
-    label.topAnchor.constraintEqualToAnchor(margins.topAnchor).active = true
-    
-      // Pin the bottom edge of the label to the bottom margin of the superview
-    label.bottomAnchor.constraintEqualToAnchor(margins.bottomAnchor).active = true
-    
-   
-
+    updateConstraints()
 
 }
+
+    override func updateConstraints() {
+        super.updateConstraints()
+        
+        // set constraint on label using Layout Guides
+        let margins = contentView.layoutMarginsGuide
+        
+        // Pin the leading edge of myView to the superview  (cell's contentView) leading edge
+        label.leadingAnchor.constraintEqualToAnchor(margins.leadingAnchor).active = true
+        
+        // Pin the trailing edge of myView to the superview (cell's contentView) trailing edge
+        label.trailingAnchor.constraintEqualToAnchor(margins.trailingAnchor).active = true
+        
+        // Pin the top edge of the label to the top margin of the superview
+        label.topAnchor.constraintEqualToAnchor(margins.topAnchor).active = true
+        
+        // Pin the bottom edge of the label to the bottom margin of the superview
+        label.bottomAnchor.constraintEqualToAnchor(margins.bottomAnchor).active = true
+        
+        
+    }
+    
+    // if this is not overriden then not ALL the cells will get the updated font size!
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        label.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+    }
 
     
     
