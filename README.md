@@ -10,4 +10,5 @@
 	* An Enum with no cases holding namespaced constants for the Colors in the app.
 	* A  Enum type creating our namespace for constants representing the images used in the app. 
 * **Simple TableView Navigation** with:
-	* Self-Sizing cells.
+	* **Self-Sizing cells** where the cell height is determined by the cell's content using Auto Layout -- the more text in the text view, the taller the cell.
+	* **Use of dynamic type**, which allows the user to change the font size at runtime. As the font size changes, the cells automatically adjust their size.
