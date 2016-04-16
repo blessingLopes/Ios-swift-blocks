@@ -1,5 +1,5 @@
 
-#### Included  Swift:boom: Sample Projects so far:
+#### Included :boom: Sample Projects so far:
 
 * **UIViewController**
 * **UINavigationController** with example of: 
