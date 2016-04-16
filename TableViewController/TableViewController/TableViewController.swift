@@ -15,8 +15,13 @@ import UIKit
 
 class TableViewContoller: UITableViewController {
     
+    // used to track changes in the user's text size accessibility setting
+    var fontChangeObserver: AnyObject?
+    
+    
     // Array to use as data source for the tableView
-    let dataSource : [String] = ["era", "uma", "vez", "um", "broken", "heart" , "another", "love", "way", "to", "do"]
+    let dataSource : [String] = ["era", "uma", "vez", "um", "broken", "heart" , "another", "love", "way", "to", "do",   "This life, which had been the tomb of his virtue and of his honor, is but a walking shadow; a poor player, that struts and frets his hour upon the stage, and then is heard no more: it is a tale told by an idiot, full of sound and fury, signifying nothing.", "end"
+]
     
     
     //MARK:- Initializers
@@ -27,8 +32,8 @@ class TableViewContoller: UITableViewController {
         tableView.registerClass( TableViewCell.self, forCellReuseIdentifier: TableViewCell.reuseIdentifier)
         
         // set up data source and delegate
-        tableView.dataSource = self
-        tableView.delegate = self
+//        tableView.dataSource = self
+//        tableView.delegate = self
     }
     
     
@@ -39,24 +44,44 @@ class TableViewContoller: UITableViewController {
     
     
     //MARK:- De-initializer
-    deinit{
-        
+    deinit {
+        if let observer = fontChangeObserver {
+            NSNotificationCenter.defaultCenter().removeObserver(observer)
+        }
     }
+
     
     
     
     // viewcontroller's view life cycle
     
     override func viewDidLoad() {
-        
-        
+
+        // Enable self sizing rows.
+        tableView.estimatedRowHeight = 70.0
+        tableView.rowHeight = UITableViewAutomaticDimension
         
         //Table view config
-        tableView.rowHeight = 92.0
         tableView.separatorStyle = .None
         tableView.backgroundColor = .whiteColor()
         
+//        setupFontSizeOberver()
+        // Set up font change observer
+        let application = UIApplication.sharedApplication()
+        let notificationCenter = NSNotificationCenter.defaultCenter()
+        let queue = NSOperationQueue.mainQueue()
         
+        fontChangeObserver = notificationCenter.addObserverForName(UIContentSizeCategoryDidChangeNotification, object: application, queue: queue) { [unowned self] _ in
+            /*
+             The user has changed the system font sizes, reset the the labels'
+             fonts to apply the new sizes.
+             */
+            
+            self.tableView.invalidateIntrinsicContentSize()
+            
+        }
+
+     
     }
     
     
@@ -83,7 +108,7 @@ class TableViewContoller: UITableViewController {
         cell!.accessoryType = .DisclosureIndicator
         
         // provide the string from the data source
-        cell!.titleLabel.text = dataSource[indexPath.item]
+        cell!.label.text = dataSource[indexPath.item]
         
         
         return cell!
@@ -98,6 +123,23 @@ class TableViewContoller: UITableViewController {
     }
     
 
+    private func setupFontSizeOberver(){
+        // Set up font change observer
+        let application = UIApplication.sharedApplication()
+        let notificationCenter = NSNotificationCenter.defaultCenter()
+        let queue = NSOperationQueue.mainQueue()
+        
+        fontChangeObserver = notificationCenter.addObserverForName(UIContentSizeCategoryDidChangeNotification, object: application, queue: queue) { [unowned self] _ in
+            /*
+             The user has changed the system font sizes, reset the the labels'
+             fonts to apply the new sizes.
+             */
+
+            self.tableView.invalidateIntrinsicContentSize()
+         
+        }
+
+    }
     
     
 }// END
