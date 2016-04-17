@@ -2,7 +2,7 @@
 
 
 
-#### Included Sample Projects<sup>[:boom:](#myfootnote1)</sup> so far :
+#### Included Sample Projects   <sup id="a1">[:boom:](#f1)</sup> so far :
 
 * **UIViewController**
 * **UINavigationController** with example of: 
@@ -20,4 +20,4 @@
 
 
 
-<a name="myfootnote1">:boom:</a>: While trying to meet two conditions: No Storyboards or use of Interface Builder and use only code from Apple's public APIs.
+<b id="f1">:boom:</b> While trying to meet two conditions: No Storyboards or use of Interface Builder and use only code from Apple's public APIs. [↩](#a1) 
