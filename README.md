@@ -1,10 +1,8 @@
 
-Ongoing Series of Small IOS9+ projects put together while trying to meet two conditions:
-  1. No Storyboards or use of Interface Builder.
-  2. Use only code from Apple's public APIs.
 
 
-#### Included Sample Projects so far :boom::
+
+#### Included Sample Projects<sup>[1](#myfootnote1)</sup> so far :boom::
 
 * **UIViewController**
 * **UINavigationController** with example of: 
@@ -19,3 +17,5 @@ Ongoing Series of Small IOS9+ projects put together while trying to meet two con
 	* **UILayoutGuide** to create constrainsts.
 	* **Use of dynamic type**, which allows the user to change the font size at runtime. As the font size changes, the layout automaticly adjusts. 
 	
+
+<a name="myfootnote1">1</a>: while trying to meet two conditions: No Storyboards or use of Interface Builder and use only code from Apple's public APIs.
