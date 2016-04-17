@@ -19,18 +19,17 @@ class TableViewContoller: UITableViewController {
     
     // Array to use as data source for the tableView
     let dataSource : [String] = ["This life, which had been the tomb of his virtue and of his honor, is but a walking shadow; a poor player, that struts and frets his hour upon the stage, and then is heard no more: it is a tale told by an idiot, full of sound and fury, signifying nothing.",
-                                 "once",
-                                 "upon",
-                                 "a time",
-                                 "she",
-                                 "broken",
-                                 "heart" ,
-                                 "another",
-                                 "love",
-                                 "way",
+        "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took.",
+        "upon dummy text ever since the 1500s, when an unknown printer.",
+        "A time  years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classica.",
+        "It is a long established fact that a reader will be distracted by the readableshe.",
+        "Broken use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will u.",
+        "Heart use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will u." ,
+        "Years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classicaanother.",
+        "Love dummy text ever since the 1500s, when an unknown printer.",
+        " Suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined.",
                                  "to that struts and frets his hour up that struts and frets his hour up that struts and frets his hour up that struts and frets his hour up that's it!",
-                                 "do",
-                                 "end"
+                                 "end."
 ]
     
     
@@ -95,6 +94,8 @@ class TableViewContoller: UITableViewController {
 
         // provide the string from the data source
         cell.label.text = dataSource[indexPath.item]
+        cell.title.text = "Cell title n. \(indexPath.item)"
+        cell.count.text = String(indexPath.item)
         
         return cell
         

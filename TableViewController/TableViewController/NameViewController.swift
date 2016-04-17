@@ -10,6 +10,7 @@
 import UIKit
 
 class NameViewController: UIViewController {
+    
     var fontChangeObserver: AnyObject?
 
    
@@ -24,7 +25,9 @@ class NameViewController: UIViewController {
         textview.textAlignment = .Center
         textview.font  = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
         textview.translatesAutoresizingMaskIntoConstraints = false
-        textview.userInteractionEnabled = false
+        textview.userInteractionEnabled = true
+        textview.editable = false
+  
         
         return textview
     }()
@@ -48,7 +51,7 @@ class NameViewController: UIViewController {
     let name: String
     
     
-// MARK:-  init
+// MARK:-  initializers
     
 
     init(withName: String){
@@ -57,11 +60,9 @@ class NameViewController: UIViewController {
      
     }
     
- 
-  required  init?(coder aDecoder: NSCoder) {
+    required  init?(coder aDecoder: NSCoder) {
        fatalError("interface builder is on break")
     }
-    
     
     
     deinit {
