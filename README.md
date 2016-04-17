@@ -13,5 +13,5 @@ Programmatically focus series of small IOS9+ concepts:
 * **Simple TableView Navigation** with:
 	* **Self-Sizing cells** where the cell height is determined by the cell's content using Auto Layout -- the more text in the text view, the taller the cell.
 	* **UILayoutGuide** to create constrainsts.
-	* **Use of dynamic type**, which allows the user to change the font size at runtime. As the font size changes, the cells automatically adjust their size.
+	* **Use of dynamic type**, which allows the user to change the font size at runtime. As the font size changes, the layout automaticly adjusts. 
 	
