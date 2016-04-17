@@ -2,7 +2,7 @@
 
 
 
-#### Included Sample Projects<sup>[1](#myfootnote1)</sup> so far :boom::
+#### Included Sample Projects<sup>[:boom:](#myfootnote1)</sup> so far :
 
 * **UIViewController**
 * **UINavigationController** with example of: 
@@ -18,4 +18,6 @@
 	* **Use of dynamic type**, which allows the user to change the font size at runtime. As the font size changes, the layout automaticly adjusts. 
 	
 
-<a name="myfootnote1">1</a>: while trying to meet two conditions: No Storyboards or use of Interface Builder and use only code from Apple's public APIs.
+
+
+<a name="myfootnote1">:boom:</a>: While trying to meet two conditions: No Storyboards or use of Interface Builder and use only code from Apple's public APIs.
