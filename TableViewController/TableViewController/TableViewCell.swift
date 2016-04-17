@@ -12,12 +12,14 @@ import UIKit
 
 class TableViewCell: UITableViewCell {
     
+    // MARK:- Properties
+    
     class var reuseIdentifier: String { return "\(self)"}
     
     let label : UILabel = UILabel()
 
     
-    
+    //MARK:- Initializers
     override init(style: UITableViewCellStyle, reuseIdentifier: String!)	{
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setup()
@@ -30,21 +32,6 @@ class TableViewCell: UITableViewCell {
         setup()
     }
     
-    
- private func setup(){
-    
-    label.frame = CGRectMake(0.0, 0.0, bounds.width, bounds.height)
-
-    label.numberOfLines = 0 // set to 0 to force to display untruncated text.
-    label.textAlignment = .Center
-    label.textColor = .darkGrayColor()
-    label.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
-    label.translatesAutoresizingMaskIntoConstraints = false
-    contentView.addSubview(label)
-    
-    updateConstraints()
-
-}
 
     override func updateConstraints() {
         super.updateConstraints()
@@ -75,6 +62,20 @@ class TableViewCell: UITableViewCell {
     }
 
     
+    // MARK:- private convenience Methods
+    
+    
+    private func setup(){
+        label.numberOfLines = 0 // set to 0 to force to display untruncated text.
+        label.textAlignment = .Center
+        label.textColor = .darkGrayColor()
+        label.font = UIFont.preferredFontForTextStyle(UIFontTextStyleBody)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        
+        contentView.addSubview(label)
+        
+        updateConstraints()
+    }
     
     
 }// ENd
