@@ -1,6 +1,10 @@
 
-Programmatically focus series of small IOS9+ concepts: 
-#### Included :boom: Sample Projects so far:
+Ongoing Series of Small IOS9+ projects put together while trying to meet two conditions:
+  1. No Storyboards or use of Interface Builder.
+  2. Use only code from Apple's public APIs.
+
+
+#### Included Sample Projects so far :boom::
 
 * **UIViewController**
 * **UINavigationController** with example of: 
