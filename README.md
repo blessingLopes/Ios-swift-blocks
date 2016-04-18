@@ -20,4 +20,4 @@
 
 
 
-<b id="f1">:boom:</b> While trying to meet two conditions: No Storyboards or use of Interface Builder and use only code from Apple's public APIs. [<](#a1) 
+<b id="f1">:boom:</b> All projects meet two conditions: No Storyboards or use of interface builder; no third party code. [<](#a1) 
