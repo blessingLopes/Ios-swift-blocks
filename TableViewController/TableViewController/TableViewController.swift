@@ -48,32 +48,8 @@ class TableViewContoller: UITableViewController {
     
     
     //MARK:- De-initializer
-    deinit {
-        if let observer = fontChangeObserver {
-            NSNotificationCenter.defaultCenter().removeObserver(observer)
-        }
-    }
+    deinit {  }
 
-    
-    
-    
-    // viewcontroller's view life cycle
-    
-    override func viewDidLoad() {
-
-        // Enable self sizing rows.
-        tableView.estimatedRowHeight = 70.0
-        tableView.rowHeight = UITableViewAutomaticDimension
-        
-        //Table view config
-        tableView.separatorStyle = .SingleLine
-        tableView.backgroundColor = .whiteColor()
-        
-        setupFontSizeOberver()
-      
-     
-    }
-    
     
     
     //MARK:- tableview dataSource Methods
@@ -90,6 +66,7 @@ class TableViewContoller: UITableViewController {
     
         // please register BEFORE it's  dequeued
         guard let cell  = tableView.dequeueReusableCellWithIdentifier(TableViewCell.reuseIdentifier, forIndexPath: indexPath) as? TableViewCell else{ fatalError("Unable to dequeue a SelfSizingTableViewCell.") }
+        
         cell.accessoryType = .DisclosureIndicator
 
         // provide the string from the data source
@@ -109,25 +86,6 @@ class TableViewContoller: UITableViewController {
     }
     
 
-    private func setupFontSizeOberver(){
-        // Set up font change observer
-        let application = UIApplication.sharedApplication()
-        let notificationCenter = NSNotificationCenter.defaultCenter()
-        let queue = NSOperationQueue.mainQueue()
-        
-        fontChangeObserver = notificationCenter.addObserverForName(UIContentSizeCategoryDidChangeNotification, object: application, queue: queue) { [unowned self] _ in
-            /*
-             The user has changed the system font sizes.
-             */
-            
-            //This allows the constraint-based layout system to take the new intrinsic content size into account.
-            self.tableView.invalidateIntrinsicContentSize()
-            
-
-        }
-
-    }
-    
     
     private func setupTableView(){
         //register the table view cell class
@@ -136,6 +94,15 @@ class TableViewContoller: UITableViewController {
         // set up data source and delegate
         tableView.dataSource = self
         tableView.delegate = self
+
+        
+        // Enable self sizing rows.
+        tableView.estimatedRowHeight = 70.0
+        tableView.rowHeight = UITableViewAutomaticDimension
+        
+        //Table view config
+        tableView.separatorStyle = .SingleLine
+        tableView.backgroundColor = .whiteColor()
 
         
     }

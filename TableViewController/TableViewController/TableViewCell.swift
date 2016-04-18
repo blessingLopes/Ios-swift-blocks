@@ -23,45 +23,49 @@ class TableViewCell: UITableViewCell {
     //MARK:- Initializers
     override init(style: UITableViewCellStyle, reuseIdentifier: String!)	{
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        setup()
+        setupLabels()
         
     }
     
     
     required init?(coder aDecoder: NSCoder)	{
         super.init(coder: aDecoder)
-        setup()
+        setupLabels()
     }
     
 
     override func updateConstraints() {
-        super.updateConstraints()
+  
         
         // set constraint on label using Layout Guides
         let margins = contentView.layoutMarginsGuide
         
         
-        
+        // Pin the leading edge of the title view to the leading edge of the cell (cell's contentView)
         title.leadingAnchor.constraintEqualToAnchor(margins.leadingAnchor).active = true
+        
+        // Pin the top edge of the title view to the top edge of the cell
         title.topAnchor.constraintEqualToAnchor(margins.topAnchor).active = true
         
-        
+        // Pin the trailing edge of the count view 30 points away from the trailing edge of the cell
         count.trailingAnchor.constraintEqualToAnchor(margins.trailingAnchor, constant: -30.0).active = true
+        
+        // Pin the top edge of the count view to the top of the cell
         count.topAnchor.constraintEqualToAnchor(margins.topAnchor).active = true
         
-        // Pin the leading edge of myView to the superview  (cell's contentView) leading edge
+        // Pin the leading edge of myView to the cell  leading edge
         label.leadingAnchor.constraintEqualToAnchor(margins.leadingAnchor).active = true
         
-        // Pin the trailing edge of myView to the superview (cell's contentView) trailing edge
+        // Pin the trailing edge of myView to the cell  trailing edge
         label.trailingAnchor.constraintEqualToAnchor(margins.trailingAnchor).active = true
         
-        // Pin the top edge of the label to the top margin of the superview
+        // Pin the top edge of the label to the top margin of the cell
         label.topAnchor.constraintEqualToAnchor(title.bottomAnchor, constant: 10.0).active = true
         
-        // Pin the bottom edge of the label to the bottom margin of the superview
+        // Pin the bottom edge of the label to the bottom margin of the cell
         label.bottomAnchor.constraintEqualToAnchor(margins.bottomAnchor).active = true
         
-        
+        super.updateConstraints()
         
     }
     
@@ -79,7 +83,7 @@ class TableViewCell: UITableViewCell {
     // MARK:- private convenience Methods
     
     
-    private func setup(){
+    private func setupLabels(){
         
         title.numberOfLines = 0
         title.textAlignment = .Center
@@ -106,7 +110,8 @@ class TableViewCell: UITableViewCell {
         contentView.addSubview(count)
         contentView.addSubview(label)
         
-        updateConstraints()
+        setNeedsUpdateConstraints()
+       
     }
     
     
