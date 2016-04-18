@@ -20,4 +20,4 @@
 
 
 
-<b id="f1">:boom:</b> All projects meet two conditions: No Storyboards or use of interface builder; no third party code. [<](#a1) 
+<b id="f1">:boom:</b> All projects meet two conditions: No Storyboards or use of interface builder; no third party frameworks or APIs. [<](#a1) 
