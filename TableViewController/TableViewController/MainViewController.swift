@@ -35,11 +35,8 @@ class MainViewController: UIViewController {
     // View life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-//        view.backgroundColor = .whiteColor()
-        
         activeViewController = table
-        
+    
     }
     
     

@@ -6,6 +6,14 @@
 //  Copyright © 2016 Blessing. All rights reserved.
 //
 
+
+
+#if os(Linux)
+    import Glibc
+#else
+    import Darwin
+#endif
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -38,11 +46,22 @@ class ViewController: UIViewController {
     
     // MARK: De-init
     
+    
+    
     deinit{
         // debug identifiers
-        print("de init is on line \(#line) of \(#function) and \(#file)")
-    }
+        #if (swift(>=2.2) && os(iOS))
+           print("de init is on line \(#line) of \(#function) and \(#file)")
+        #elseif os(tvOS)
+           print("the tube")
+        #endif
+        
+    } 
     
+  
+    
+   
+
     
     
     // MARK:- View life cycle
@@ -67,6 +86,8 @@ class ViewController: UIViewController {
         let whiteView = UIView(frame: viewframe)
         // color it white
         whiteView.backgroundColor = UIColor.whiteColor()
+        
+        
         
         // add the view as a subView of our viewcontroller's view
         view.addSubview(whiteView)
