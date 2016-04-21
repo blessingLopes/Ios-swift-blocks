@@ -5,6 +5,7 @@
 #### Included Sample Projects   <sup id="a1">[:boom:](#f1)</sup> so far :
 
 * **UIViewController**
+	* Build Configuration conditional example - ```#if swift(>=2.2)```. 
 * **UINavigationController** with example of: 
 	* Center a UILabel using Auto Layout Visual Format Language constrainsts.
 * **Custom** **ViewController** **transition** with:
