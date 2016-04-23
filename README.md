@@ -4,10 +4,10 @@
 
 #### Included Sample Projects   <sup id="a1">[:boom:](#f1)</sup> so far :
 
-* **UIViewController**
-	* Build Configuration conditional example - ```#if swift(>=2.2)```. 
+* **UIViewController** showing:
+	* how to conditionally compile code depending on the version of Swift being used: ```#if swift(>=2.2)```. 
 * **UINavigationController** with example of: 
-	* Center a UILabel using Auto Layout Visual Format Language constrainsts.
+	* how to center a UILabel using Auto Layout Visual Format Language constrainsts.
 * **Custom** **ViewController** **transition** with:
 	*  **Extension to 'Selector'** type with static constants holding the selectors for the methods we are calling in our class, (usable in Xcode 7.3+, Swift 2.2+).
 	* **Log app launch time**.
