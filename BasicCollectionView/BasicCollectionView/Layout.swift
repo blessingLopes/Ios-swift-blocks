@@ -17,7 +17,7 @@ class Layout: UICollectionViewLayout {
 	
 	
 	// MARK:- Read-Only Computed Property
-	var setup				: LayoutSetupValues { return LayoutSetupValues() }
+	var setup	: LayoutSetupValues { return LayoutSetupValues() }
 	
 
 	
