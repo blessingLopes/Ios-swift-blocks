@@ -15,26 +15,6 @@ import UIKit
 
 class CollectionViewDataSource: NSObject, UICollectionViewDataSource{
 	
-	//MARK: Properties
-	
-	private let itemIdentifier: String
-	
-	
-	//MARK:- Initializers
-	convenience override init() {
-		self.init(cellIdentifier: CELLID) // calls designated init with a default cell identifier
-	}
-	
-	
-	init( cellIdentifier: String ) {
-		itemIdentifier = cellIdentifier
-		super.init()
-		
-	}
-	
-	
-	
-	
 	
 	
 	//MARK: CollectionView DataSource Methods
@@ -54,7 +34,7 @@ class CollectionViewDataSource: NSObject, UICollectionViewDataSource{
 	
 	
 	 func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-		let cell = collectionView.dequeueReusableCellWithReuseIdentifier(CELLID, forIndexPath: indexPath) as! Cell
+		let cell = collectionView.dequeueReusableCellWithReuseIdentifier(Cell.cellreuseIdentifier, forIndexPath: indexPath) as! Cell
 		
 		cell.label.text = "\(indexPath.item)"
 		

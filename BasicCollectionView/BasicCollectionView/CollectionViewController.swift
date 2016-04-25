@@ -8,7 +8,7 @@
 
 import UIKit
 
-let CELLID = "cellid"
+
 
 
 class CollectionViewController: UICollectionViewController {
@@ -20,7 +20,7 @@ class CollectionViewController: UICollectionViewController {
 		super.init(collectionViewLayout: layout)
 		
 		// Register cell class & General setup
-		collectionView?.registerClass(Cell.self, forCellWithReuseIdentifier: CELLID)
+		collectionView?.registerClass(Cell.self, forCellWithReuseIdentifier: Cell.cellreuseIdentifier)
 		collectionView?.indicatorStyle = .White
 		collectionView?.backgroundColor = UIColor.whiteColor()
 		

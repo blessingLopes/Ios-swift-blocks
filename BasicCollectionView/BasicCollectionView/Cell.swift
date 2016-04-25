@@ -12,33 +12,39 @@ class Cell: UICollectionViewCell {
 	
 	//MARK:- Stored Properties
 	
-	let label	 : UILabel
+	let label: UILabel = UILabel()
 	
-	
+    static var cellreuseIdentifier: String { return "\(self)"}
 	
 	//MARK:- Init
 	override init(frame: CGRect) {
-		label = UILabel()
 		super.init(frame: frame)
-		
-		label.frame = bounds
-		label.textAlignment = .Center
-		label.contentMode = .ScaleAspectFill
-		contentView.addSubview(label)
-	}
+        
+        setup()
+    }
 	
 	
 	
 	
 	required init?(coder aDecoder: NSCoder) {
-		fatalError("init(coder:) has not been implemented")
+		super.init(coder: aDecoder)
+        setup()
 	}
 
 	
 	
 
 	
-	
+    private func setup(){
+    
+        label.frame = bounds
+        label.textAlignment = .Center
+        label.contentMode = .ScaleAspectFill
+        
+        contentView.addSubview(label)
+
+        
+    }
 	
 	
 	//MARK:- Custom Layout Attributes
