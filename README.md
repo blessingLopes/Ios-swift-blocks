@@ -6,7 +6,7 @@
 
 * **UIViewController** showing:
 	* how to conditionally compile code depending on the version of Swift being used: ```#if swift(>=2.2)```. 
-* **UINavigationController** with example of: 
+* **UINavigationController** showing: 
 	* how to center a UILabel using Auto Layout Visual Format Language constrainsts.
 * **Custom** **ViewController** **transition** with:
 	*  Extension to ```Selector``` with static constants holding the selectors for the methods we are calling in our class, (usable in Xcode 7.3+, Swift 2.2+).
@@ -17,7 +17,7 @@
 	* Self-Sizing cells.
 	* UILayoutGuide to create constrainsts.
 	* Use of dynamic type, which allows the user to change the font size at runtime. As the font size changes, the layout automaticly adjusts. 
-* **Collection View**
+* **Collection View** with:
 	* Custom UICollectionViewLayout subclass.
 
 
