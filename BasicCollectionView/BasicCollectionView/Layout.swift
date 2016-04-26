@@ -19,7 +19,7 @@ class Layout: UICollectionViewLayout {
 	// MARK:- Read-Only Computed Property
 	var setup	: LayoutSetupValues { return LayoutSetupValues() }
 	
-
+    var contentSize = CGSizeZero
 	
 	// Tell the collection view that i'll be using StackLayoutAttributes, and not the default UICollectionViewLayoutAttributes for the layout attributes.
 	override class func layoutAttributesClass() -> AnyClass {
@@ -35,7 +35,7 @@ class Layout: UICollectionViewLayout {
 	
 		let cellsize = setup.cellSize
 		let screenSize = UIScreen.mainScreen().bounds.size
-		var center = CGPointMake(screenSize.width / 2.0 , 200.0)
+		var center = CGPointMake(screenSize.width / 2.0 , 100.0)
 		
 		let itemCount = collectionView?.numberOfItemsInSection(0)
         var ind = 0
@@ -47,10 +47,10 @@ class Layout: UICollectionViewLayout {
 			let attributes  = StackLayoutAttributes(forCellWithIndexPath: indexPath)
 			attributes.size = cellsize
 			attributes.center = center
-			attributes.shadowOffset = CGSize(width: 1.0, height: 0.0)
-			attributes.shadowColor = UIColor.whiteColor()
+			attributes.shadowOffset = CGSize(width: 1.0, height: 1.0)
+			attributes.shadowColor = .lightGrayColor()
 			attributes.shadowOpacity = 0.5
-			attributes.shadowRadius = 0.0
+			attributes.shadowRadius = 3.0
 			
 		
 			center = CGPointMake(center.x , center.y + 50.0)
@@ -59,8 +59,9 @@ class Layout: UICollectionViewLayout {
 			
 			attributesInfo[indexPath] = attributes
             ind += 1
+            
 		}
-	
+        contentSize = CGSizeMake(0.0, center.y + 30.0)
 	}
 	
 	
@@ -73,7 +74,7 @@ class Layout: UICollectionViewLayout {
 	
 	
 	override func collectionViewContentSize() -> CGSize {
-		return  CGSizeMake(0.0, 1400.0)
+		return  contentSize
 	}
 	
 	

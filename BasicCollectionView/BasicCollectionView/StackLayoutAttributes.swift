@@ -23,7 +23,7 @@ class StackLayoutAttributes: UICollectionViewLayoutAttributes {
 	
 	// required by UICollectionViewLayoutAttributes
 	override func copyWithZone(zone: NSZone) -> AnyObject {
-		if let copiedAttributes: StackLayoutAttributes =	super.copyWithZone(zone) as? StackLayoutAttributes{
+		if let copiedAttributes: StackLayoutAttributes = super.copyWithZone(zone) as? StackLayoutAttributes{
 			copiedAttributes.shadowOffset	= shadowOffset
 			copiedAttributes.shadowColor	= shadowColor
 			copiedAttributes.shadowOpacity	= shadowOpacity
@@ -43,23 +43,13 @@ class StackLayoutAttributes: UICollectionViewLayoutAttributes {
 				attributes.shadowOpacity == shadowOpacity &&
 				attributes.shadowRadius == shadowRadius{
 					return super.isEqual(object)
-					
 			}
-			
 		}
 		return false
 	}
 	
-	
-	// remove the shadow effect from the attribute
-	func removeAllShadowAttributes(){
-		shadowOffset = nil
-		shadowColor = nil
-		shadowOpacity = nil
-		shadowRadius = nil
-	}
+
 	
 	
-	
-}
+}// ENd
 

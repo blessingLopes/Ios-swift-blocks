@@ -14,6 +14,7 @@ class Cell: UICollectionViewCell {
 	
 	let label: UILabel = UILabel()
 	
+    // not overridable type propery
     static var cellreuseIdentifier: String { return "\(self)"}
 	
 	//MARK:- Init
