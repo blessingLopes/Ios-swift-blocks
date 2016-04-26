@@ -21,7 +21,7 @@
 	* **Custom UICollectionViewLayout subclass**
 
 
-
+----
 <b id="f1">:boom:</b>
 All projects meet two conditions: 
  1. No Storyboards or use of interface builder.
