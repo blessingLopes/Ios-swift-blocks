@@ -5,7 +5,7 @@
 [![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
 )](https://developer.apple.com/swift)
 [![](https://img.shields.io/badge/xcode-7.3%2B-blue.svg
-)](https://developer.apple.com/swift)
+)](https://developer.apple.com/xcode/)
 
 
 #### Included Sample Projects   <sup id="a1">[:boom:](#f1)</sup> so far :
