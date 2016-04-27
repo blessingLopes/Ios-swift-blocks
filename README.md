@@ -1,5 +1,11 @@
 
 
+[![Platform](https://img.shields.io/badge/IOS%20-9.0%2B-orange.svg
+)](https://developer.apple.com/iphone/index.action)
+[![Language](http://img.shields.io/badge/language-swift-brightgreen.svg?style=flat
+)](https://developer.apple.com/swift)
+[![](https://img.shields.io/badge/xcode-7.3%2B-blue.svg
+)](https://developer.apple.com/swift)
 
 
 #### Included Sample Projects   <sup id="a1">[:boom:](#f1)</sup> so far :
