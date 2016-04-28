@@ -2,7 +2,7 @@
 //  Layout.swift
 //  BasicCollectionView
 //
-//  Created by manuel on 30/09/15.
+//  Created by manuel on 29/04/16.
 //  Copyright © 2015 Blessing.co. All rights reserved.
 //
 

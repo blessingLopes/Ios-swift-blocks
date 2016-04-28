@@ -2,7 +2,7 @@
 //  StackLayoutAttributes.swift
 //  BasicCollectionView
 //
-//  Created by manuel on 01/10/15.
+//  Created by manuel on 30/04/16.
 //  Copyright © 2015 Blessing.co. All rights reserved.
 //
 

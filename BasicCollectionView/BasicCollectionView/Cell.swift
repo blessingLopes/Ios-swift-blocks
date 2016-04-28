@@ -2,7 +2,7 @@
 //  Cell.swift
 //  BasicCollectionView
 //
-//  Created by manuel on 30/09/15.
+//  Created by manuel on 30/04/16.
 //  Copyright © 2015 Blessing.co. All rights reserved.
 //
 
@@ -21,33 +21,40 @@ class Cell: UICollectionViewCell {
 	override init(frame: CGRect) {
 		super.init(frame: frame)
         
-        setup()
+        setupLabel()
     }
-	
-	
 	
 	
 	required init?(coder aDecoder: NSCoder) {
 		super.init(coder: aDecoder)
-        setup()
+        setupLabel()
 	}
 
 	
+		
+    //MARK:- Add constraints
 	
-
-	
-    private func setup(){
     
-        label.frame = bounds
-        label.textAlignment = .Center
-        label.contentMode = .ScaleAspectFill
+    override func updateConstraints() {
         
-        contentView.addSubview(label)
+        // set constraint on label using Layout Guides
+        let margins = contentView.layoutMarginsGuide
+        
+        // Pin the trailing edge of myView to the cell  trailing edge
+        label.trailingAnchor.constraintEqualToAnchor(margins.trailingAnchor).active = true
+        
 
+        // Pin the bottom edge of the label to the bottom margin of the cell
+        label.bottomAnchor.constraintEqualToAnchor(margins.bottomAnchor).active = true
         
+        super.updateConstraints()
     }
-	
-	
+    
+    
+    
+    
+    
+    
 	//MARK:- Custom Layout Attributes
 	
 	override func applyLayoutAttributes(layoutAttributes: UICollectionViewLayoutAttributes) {
@@ -63,7 +70,29 @@ class Cell: UICollectionViewCell {
 		
 	}
 	
+    
+    //MARK:- private convenience methods
+    
+    private func setupLabel(){
+        
+        label.textAlignment = .Center
+        label.font = UIFont.preferredFontForTextStyle(UIFontTextStyleFootnote)
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 0
 
+        contentView.addSubview(label)
+
+        setNeedsUpdateConstraints()
+        
+    }
+
+    // if this is not overriden the cells will NOT get the updated font size!
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        label.font = UIFont.preferredFontForTextStyle(UIFontTextStyleFootnote)
+        
+    }
 	
 	
 }

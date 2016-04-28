@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  BasicCollectionView
 //
-//  Created by manuel on 30/09/15.
+//  Created by manuel on 29/04/16.
 //  Copyright © 2015 Blessing.co. All rights reserved.
 //
 
@@ -19,7 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 		window = UIWindow(frame: UIScreen.mainScreen().bounds)
 		window?.rootViewController = CollectionViewController(collectionViewLayout: Layout())
 		window?.makeKeyAndVisible()
-		
 		
 		return true
 	}
