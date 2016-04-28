@@ -17,16 +17,19 @@
 	* Simple UINavigationController.
 	* Shows how to center a UILabel using Auto Layout Visual Format Language constrainsts.
 * **ViewControllerTransition** 
+
         * Custom transition animation between two View controllers.
 	* Extension to ```Selector``` with static constants holding the selectors for the methods we are calling in our class, (usable in Xcode 7.3+, Swift 2.2+).
 	* Log app launch time.
 	* Enum with no cases holding namespaced constants for the Colors in the app.
 	* Enum creating a namespace for constants representing the images used in the app. 
 * **TableViewController** with:
+
         * Simple table view navigation example with:
-	 * Self-Sizing cells.
-         * UILayoutGuide to create constrainsts.
-	 * Use of dynamic type, which allows the user to change the font size at runtime. As the font size changes, the layout automaticly adjusts. 
+        
+	  * Self-Sizing cells.
+          * UILayoutGuide to create constrainsts.
+	  * Use of dynamic type, which allows the user to change the font size at runtime. As the font size changes, the layout automaticly adjusts. 
 * **BasicCollectionView** with:
 	* Custom UICollectionViewLayout subclass.
 * **NavigationControllerTransition** 
