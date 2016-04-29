@@ -33,17 +33,15 @@ class Layout: UICollectionViewLayout {
 	
 	override func prepareLayout() {
 	
-		let cellsize = setup.cellSize
-		let screenSize = UIScreen.mainScreen().bounds.size
-		var center = CGPointMake(screenSize.width / 2.0 , 100.0)
-		
-		let itemCount = collectionView?.numberOfItemsInSection(0)
-        var ind = 0
-		
+		let cellsize   = setup.cellSize
+		let screenSize = setup.scrSize
+		let itemCount  = collectionView?.numberOfItemsInSection(0)
+        var center     = CGPointMake(screenSize.width / 2.0 , 100.0)
+        
 		// generate the an attributes array for each cell's indexpath 
-		for  _ in (0 ..< itemCount!){
+		for  i in (0 ..< itemCount!){
     
-			let indexPath = NSIndexPath(forItem: ind, inSection: 0)
+			let indexPath = NSIndexPath(forItem: i, inSection: 0)
 			let attributes  = StackLayoutAttributes(forCellWithIndexPath: indexPath)
 			attributes.size = cellsize
 			attributes.center = center
@@ -55,11 +53,9 @@ class Layout: UICollectionViewLayout {
 		
 			center = CGPointMake(center.x , center.y + 50.0)
 			attributes.alpha = 1.0
-			attributes.zIndex = (itemCount! - ind)
+			attributes.zIndex = (itemCount! - i)
 			
 			attributesInfo[indexPath] = attributes
-            ind += 1
-            
 		}
         contentSize = CGSizeMake(0.0, center.y + 30.0)
 	}

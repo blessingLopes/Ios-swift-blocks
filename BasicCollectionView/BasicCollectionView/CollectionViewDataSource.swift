@@ -25,9 +25,8 @@ class CollectionViewDataSource: NSObject, UICollectionViewDataSource{
 		
 	
 	 func collectionView( collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int{
-	
-		return 20
-	}
+        return 20
+    }
 	
 	
 	

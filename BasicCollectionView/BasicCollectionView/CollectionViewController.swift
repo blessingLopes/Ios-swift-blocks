@@ -13,8 +13,8 @@ import UIKit
 
 class CollectionViewController: UICollectionViewController {
 	
-	lazy var mydataSource : CollectionViewDataSource = CollectionViewDataSource()
-     var fontChangeObserver: AnyObject?
+	private lazy var mydataSource : CollectionViewDataSource = CollectionViewDataSource()
+    private var fontChangeObserver: AnyObject?
 	
 	//MARK:- Initialzers
 	override init(collectionViewLayout layout: UICollectionViewLayout) {
@@ -47,7 +47,6 @@ class CollectionViewController: UICollectionViewController {
         collectionView?.indicatorStyle = .Black
         collectionView?.backgroundColor = UIColor.whiteColor()
 
-        
         collectionView?.dataSource  = mydataSource
         collectionView?.delegate    = self
     }

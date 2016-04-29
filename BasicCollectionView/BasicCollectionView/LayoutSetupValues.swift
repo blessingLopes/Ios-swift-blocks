@@ -17,7 +17,7 @@ struct LayoutSetupValues {
 	//MARK:-   Read-Only computed Properties
 	
 	var scr : CGRect { return UIScreen.mainScreen().bounds }
-	
+    var scrSize : CGSize { return UIScreen.mainScreen().bounds.size }
 	
 	//  cell width is 1/3 of the screen width
     var cellWidth : CGFloat {

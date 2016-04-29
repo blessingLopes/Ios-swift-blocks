@@ -30,6 +30,7 @@
 * **BasicCollectionView** with:
   * Custom UICollectionViewLayout subclass.
   * Dynamic Type for the cells's label.
+  * Custom UICollectionViewLayoutAttributes subclass to provide extra attributs to the cells.
 * **NavigationControllerTransition** 
   * Custom transition for a navigation controller. 
           

@@ -76,6 +76,7 @@ class Cell: UICollectionViewCell {
     private func setupLabel(){
         
         label.textAlignment = .Center
+        label.lineBreakMode = .ByTruncatingMiddle
         label.font = UIFont.preferredFontForTextStyle(UIFontTextStyleFootnote)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 0
