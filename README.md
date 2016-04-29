@@ -29,6 +29,7 @@
   * Use of dynamic type, which allows the user to change the font size at runtime. As the font size changes, the layout automaticly adjusts. 
 * **BasicCollectionView** with:
   * Custom UICollectionViewLayout subclass.
+  * Dynamic Type for the cells's label.
 * **NavigationControllerTransition** 
   * Custom transition for a navigation controller. 
           
